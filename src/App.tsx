@@ -5,6 +5,7 @@ import Create from "./pages/Create";
 import LoggedIn from "./pages/LoggedIn";
 import SignUp from "./pages/SignUp";
 import backgroundImage from "./assets/backgroundImage.svg";
+import Headers from "./components/Headers";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       style={{backgroundImage: `url(${backgroundImage})`, height: '100vh', backgroundSize: 'cover',
   backgroundPosition: 'center', backgroundRepeat: 'no-repeat', display: 'block'}}
     >
+      <Headers/>
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
